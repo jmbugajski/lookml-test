@@ -1,50 +1,19 @@
 connection: "thelook_events"
 
-# include all the views
 include: "*.view"
 
-# include all the dashboards
 include: "*.dashboard"
 
 datagroup: jmb_test_default_datagroup {
-  # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "4 hours"
 }
-
 persist_with: jmb_test_default_datagroup
 
-explore: bsandell {}
-
-explore: company_list {}
-
-explore: distribution_centers {}
-
-explore: events {
-  join: users {
-    type: left_outer
-    sql_on: ${events.user_id} = ${users.id} ;;
-    relationship: many_to_one
-  }
-}
-
-explore: inventory_items {
-  label:  "Inventory"
-  join: products {
-    type: left_outer
-    sql_on: ${inventory_items.product_id} = ${products.id} ;;
-    relationship: many_to_one
-  }
-
-  join: distribution_centers {
-    type: left_outer
-    sql_on: ${products.distribution_center_id} = ${distribution_centers.id} ;;
-    relationship: many_to_one
-  }
-}
-
 explore: order_items {
-  label: "Orders"
+  label: "USA Orders"
   group_label: "JMB The Look Model Building"
+  persist_with: jmb_test_default_datagroup
+  sql_always_where: ${users.country} = 'USA' ;;
   join: users {
     type: left_outer
     sql_on: ${order_items.user_id} = ${users.id} ;;
@@ -70,8 +39,21 @@ explore: order_items {
   }
 }
 
-explore: products {
-  label:  "Products"
+explore: events {
+  join: users {
+    type: left_outer
+    sql_on: ${events.user_id} = ${users.id} ;;
+    relationship: many_to_one
+  }
+}
+
+explore: inventory_items {
+  join: products {
+    type: left_outer
+    sql_on: ${inventory_items.product_id} = ${products.id} ;;
+    relationship: many_to_one
+  }
+
   join: distribution_centers {
     type: left_outer
     sql_on: ${products.distribution_center_id} = ${distribution_centers.id} ;;
@@ -79,4 +61,7 @@ explore: products {
   }
 }
 
+explore: bsandell {}
+explore: company_list {}
+explore: distribution_centers {}
 explore: users {}
