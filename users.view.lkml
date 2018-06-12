@@ -20,8 +20,8 @@ view: users {
   }
 
   dimension: age_generation {
-    sql: |
-      (CASE
+    sql:
+      CASE
         WHEN ${age} <= 5 THEN 'Gen Alpha'
         WHEN ${age} => 6 AND ${age} <= 23 THEN 'Gen Z'
         WHEN ${age} >= 24 AND ${age} <= 38 THEN 'Gen Y Millenials'
@@ -30,7 +30,7 @@ view: users {
         WHEN ${age} >= 73 AND ${age} <= 93 THEN 'Silent Generation'
         WHEN ${age} >= 94 THEN 'Greatest Generation'
         ELSE 'Unknown'
-      END)
+      END ;;
   }
 
   dimension: city {
