@@ -7,12 +7,12 @@ include: "*.dashboard"
 datagroup: jmb_test_default_datagroup {
   max_cache_age: "4 hours"
 }
+
 persist_with: jmb_test_default_datagroup
 
 explore: order_items {
   label: "USA Orders"
   group_label: "JMB The Look Model Building"
-  persist_with: jmb_test_default_datagroup
   sql_always_where: ${users.country} = 'USA' ;;
   join: users {
     type: left_outer
@@ -40,6 +40,7 @@ explore: order_items {
 }
 
 explore: events {
+  group_label: "JMB The Look Model Building"
   join: users {
     type: left_outer
     sql_on: ${events.user_id} = ${users.id} ;;
@@ -48,6 +49,7 @@ explore: events {
 }
 
 explore: inventory_items {
+  group_label: "JMB The Look Model Building"
   join: products {
     type: left_outer
     sql_on: ${inventory_items.product_id} = ${products.id} ;;
@@ -61,7 +63,17 @@ explore: inventory_items {
   }
 }
 
-explore: bsandell {}
-explore: company_list {}
-explore: distribution_centers {}
-explore: users {}
+explore: bsandell {
+  group_label: "JMB The Look Model Building"
+}
+
+explore: company_list {
+  group_label: "JMB The Look Model Building"
+}
+
+explore: distribution_centers {
+  group_label: "JMB The Look Model Building"
+}
+explore: users {
+  group_label: "JMB The Look Model Building"
+}
