@@ -28,6 +28,7 @@ explore: events {
 }
 
 explore: inventory_items {
+  label:  "Inventory"
   join: products {
     type: left_outer
     sql_on: ${inventory_items.product_id} = ${products.id} ;;
@@ -42,6 +43,8 @@ explore: inventory_items {
 }
 
 explore: order_items {
+  label: "Orders"
+  group_label: "JMB The Look Model Building"
   join: users {
     type: left_outer
     sql_on: ${order_items.user_id} = ${users.id} ;;
@@ -68,6 +71,7 @@ explore: order_items {
 }
 
 explore: products {
+  label:  "Products"
   join: distribution_centers {
     type: left_outer
     sql_on: ${products.distribution_center_id} = ${distribution_centers.id} ;;
