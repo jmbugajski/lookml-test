@@ -21,7 +21,7 @@ view: users {
 
   dimension: age_generation {
     type:  string
-    sql: |
+    sql:
       CASE
       WHEN ${age} <= 5 THEN 'Gen Alpha'
       WHEN ${age} > 5 AND ${age} <= 23 THEN 'Gen Z'
