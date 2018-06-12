@@ -29,7 +29,6 @@ view: products {
 
   dimension: distribution_center_id {
     type: number
-    # hidden: yes
     sql: ${TABLE}.distribution_center_id ;;
   }
 
