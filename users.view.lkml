@@ -23,7 +23,7 @@ view: users {
     sql:
       CASE
         WHEN ${age} <= 5 THEN 'Gen Alpha'
-        WHEN ${age} => 6 AND ${age} <= 23 THEN 'Gen Z'
+        WHEN ${age} >= 6 AND ${age} <= 23 THEN 'Gen Z'
         WHEN ${age} >= 24 AND ${age} <= 38 THEN 'Gen Y Millenials'
         WHEN ${age} >= 39 AND ${age} <= 53 THEN 'Gen X'
         WHEN ${age} >= 54 AND ${age} <= 72 THEN 'Baby Boomers'
