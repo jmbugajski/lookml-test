@@ -12,6 +12,11 @@ view: products {
     sql: ${TABLE}.brand ;;
   }
 
+  dimension: store_area {
+    sql: ${TABLE}.category ;;
+    map_layer_name: store_map_layer
+  }
+
   dimension: category {
     type: string
     sql: ${TABLE}.category ;;
