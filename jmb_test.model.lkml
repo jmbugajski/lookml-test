@@ -2,18 +2,18 @@ connection: "thelook_events"
 
 include: "*.view"
 
-include: "*.dashboard"
-
 datagroup: jmb_test_default_datagroup {
   max_cache_age: "4 hours"
 }
-
 persist_with: jmb_test_default_datagroup
 
+map_layer: store_map_layer {
+  file: "store-map-sample-mod.topojson"
+  property_key: "display-name"
+}
+
 explore: order_items {
-  label: "USA Orders"
-  group_label: "JMB The Look Model Building"
-  sql_always_where: ${users.country} = 'USA' ;;
+  group_label: "Store Analytics"
   join: users {
     type: left_outer
     sql_on: ${order_items.user_id} = ${users.id} ;;
@@ -40,7 +40,7 @@ explore: order_items {
 }
 
 explore: events {
-  group_label: "JMB The Look Model Building"
+  group_label: "Store Analytics"
   join: users {
     type: left_outer
     sql_on: ${events.user_id} = ${users.id} ;;
@@ -49,7 +49,7 @@ explore: events {
 }
 
 explore: inventory_items {
-  group_label: "JMB The Look Model Building"
+  group_label: "Store Analytics"
   join: products {
     type: left_outer
     sql_on: ${inventory_items.product_id} = ${products.id} ;;
@@ -63,17 +63,13 @@ explore: inventory_items {
   }
 }
 
-explore: bsandell {
-  group_label: "JMB The Look Model Building"
-}
-
 explore: company_list {
-  group_label: "JMB The Look Model Building"
+  group_label: "Store Analytics"
 }
 
 explore: distribution_centers {
-  group_label: "JMB The Look Model Building"
+  group_label: "Store Analytics"
 }
 explore: users {
-  group_label: "JMB The Look Model Building"
+  group_label: "Store Analytics"
 }

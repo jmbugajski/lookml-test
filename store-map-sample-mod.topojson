@@ -1,0 +1,810 @@
+{
+	"type": "Topology",
+	"objects": {
+		"collection": {
+			"type": "GeometryCollection",
+			"geometries": [
+				{
+					"type": "Polygon",
+					"properties": {
+						"display-name": "Restrooms",
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0
+					},
+					"arcs": [
+						[
+							2
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Appliances"
+					},
+					"arcs": [
+						[
+							3
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Stationary"
+					},
+					"arcs": [
+						[
+							4
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Health & Beauty"
+					},
+					"arcs": [
+						[
+							5
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Customer Service"
+					},
+					"arcs": [
+						[
+							6
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Checkout #1"
+					},
+					"arcs": [
+						[
+							7
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Checkout #2"
+					},
+					"arcs": [
+						[
+							8
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Checkout #3"
+					},
+					"arcs": [
+						[
+							9
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Home Decor"
+					},
+					"arcs": [
+						[
+							10
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Toys & Games"
+					},
+					"arcs": [
+						[
+							11
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Home Electronics"
+					},
+					"arcs": [
+						[
+							12
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Sporting Goods"
+					},
+					"arcs": [
+						[
+							13
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Automotive"
+					},
+					"arcs": [
+						[
+							14
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Seasonal"
+					},
+					"arcs": [
+						[
+							15
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Boy's Clothing"
+					},
+					"arcs": [
+						[
+							16
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Men's Clothing"
+					},
+					"arcs": [
+						[
+							17
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Women's Clothing"
+					},
+					"arcs": [
+						[
+							18
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Girl's Clothing"
+					},
+					"arcs": [
+						[
+							19
+						]
+					]
+				},
+				{
+					"type": "Polygon",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"fill": "#555555",
+						"fill-opacity": 0,
+						"display-name": "Accessories"
+					},
+					"arcs": [
+						[
+							20
+						]
+					]
+				},
+				{
+					"type": "LineString",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"display-name": "Store Entrance"
+					},
+					"arcs": [
+						0
+					]
+				},
+				{
+					"type": "LineString",
+					"properties": {
+						"stroke": "#000000",
+						"stroke-width": 2,
+						"stroke-opacity": 1,
+						"display-name": "Wall"
+					},
+					"arcs": [
+						1
+					]
+				}
+			]
+		}
+	},
+	"arcs": [
+		[
+			[
+				4582,
+				9999
+			],
+			[
+				237,
+				0
+			],
+			[
+				107,
+				-393
+			]
+		],
+		[
+			[
+				5245,
+				9977
+			],
+			[
+				4721,
+				-12
+			],
+			[
+				0,
+				-2299
+			]
+		],
+		[
+			[
+				0,
+				8288
+			],
+			[
+				1410,
+				0
+			],
+			[
+				0,
+				1700
+			],
+			[
+				-1410,
+				0
+			],
+			[
+				0,
+				-1700
+			]
+		],
+		[
+			[
+				0,
+				6030
+			],
+			[
+				1410,
+				0
+			],
+			[
+				0,
+				2166
+			],
+			[
+				-1410,
+				0
+			],
+			[
+				0,
+				-2166
+			]
+		],
+		[
+			[
+				0,
+				3996
+			],
+			[
+				1401,
+				0
+			],
+			[
+				0,
+				1940
+			],
+			[
+				-1401,
+				0
+			],
+			[
+				0,
+				-1940
+			]
+		],
+		[
+			[
+				1500,
+				7266
+			],
+			[
+				1213,
+				0
+			],
+			[
+				0,
+				2727
+			],
+			[
+				-1213,
+				0
+			],
+			[
+				0,
+				-2727
+			]
+		],
+		[
+			[
+				2803,
+				8973
+			],
+			[
+				1680,
+				0
+			],
+			[
+				0,
+				1026
+			],
+			[
+				-1680,
+				0
+			],
+			[
+				0,
+				-1026
+			]
+		],
+		[
+			[
+				6442,
+				8494
+			],
+			[
+				967,
+				0
+			],
+			[
+				0,
+				773
+			],
+			[
+				-967,
+				0
+			],
+			[
+				0,
+				-773
+			]
+		],
+		[
+			[
+				7606,
+				8505
+			],
+			[
+				459,
+				0
+			],
+			[
+				455,
+				-5
+			],
+			[
+				4,
+				767
+			],
+			[
+				-922,
+				0
+			],
+			[
+				4,
+				-762
+			]
+		],
+		[
+			[
+				8688,
+				8494
+			],
+			[
+				836,
+				0
+			],
+			[
+				0,
+				773
+			],
+			[
+				-836,
+				0
+			],
+			[
+				0,
+				-773
+			]
+		],
+		[
+			[
+				0,
+				0
+			],
+			[
+				1393,
+				0
+			],
+			[
+				0,
+				3899
+			],
+			[
+				-1393,
+				0
+			],
+			[
+				0,
+				-3899
+			]
+		],
+		[
+			[
+				1508,
+				0
+			],
+			[
+				2508,
+				0
+			],
+			[
+				0,
+				2009
+			],
+			[
+				-2508,
+				0
+			],
+			[
+				0,
+				-2009
+			]
+		],
+		[
+			[
+				4164,
+				13
+			],
+			[
+				3130,
+				0
+			],
+			[
+				0,
+				2034
+			],
+			[
+				-3130,
+				0
+			],
+			[
+				0,
+				-2034
+			]
+		],
+		[
+			[
+				7458,
+				25
+			],
+			[
+				2541,
+				0
+			],
+			[
+				0,
+				2009
+			],
+			[
+				-2541,
+				13
+			],
+			[
+				0,
+				-2022
+			]
+		],
+		[
+			[
+				8122,
+				2257
+			],
+			[
+				1852,
+				0
+			],
+			[
+				0,
+				3180
+			],
+			[
+				-1852,
+				0
+			],
+			[
+				0,
+				-3180
+			]
+		],
+		[
+			[
+				8114,
+				5675
+			],
+			[
+				1860,
+				0
+			],
+			[
+				0,
+				1736
+			],
+			[
+				-1860,
+				0
+			],
+			[
+				0,
+				-1736
+			]
+		],
+		[
+			[
+				4213,
+				4984
+			],
+			[
+				1344,
+				0
+			],
+			[
+				0,
+				1400
+			],
+			[
+				-1344,
+				0
+			],
+			[
+				0,
+				-1400
+			]
+		],
+		[
+			[
+				4221,
+				3778
+			],
+			[
+				1328,
+				0
+			],
+			[
+				0,
+				1050
+			],
+			[
+				-1328,
+				12
+			],
+			[
+				0,
+				-1062
+			]
+		],
+		[
+			[
+				3164,
+				3778
+			],
+			[
+				918,
+				0
+			],
+			[
+				-17,
+				2606
+			],
+			[
+				-442,
+				0
+			],
+			[
+				-459,
+				0
+			],
+			[
+				0,
+				-2606
+			]
+		],
+		[
+			[
+				5721,
+				4972
+			],
+			[
+				1065,
+				0
+			],
+			[
+				0,
+				1423
+			],
+			[
+				-1073,
+				-11
+			],
+			[
+				8,
+				-1412
+			]
+		],
+		[
+			[
+				5721,
+				3790
+			],
+			[
+				1065,
+				0
+			],
+			[
+				0,
+				1026
+			],
+			[
+				-1065,
+				0
+			],
+			[
+				0,
+				-1026
+			]
+		]
+	],
+	"transform": {
+		"scale": [
+			1,
+			-1
+		],
+		"translate": [
+			0,
+			0
+		]
+	},
+	"bbox": [
+		0,
+		0,
+		7.75,
+		5
+	]
+}
