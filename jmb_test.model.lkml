@@ -15,7 +15,7 @@ map_layer: store_map_layer {
 }
 
 explore: order_items {
-  group_label: "Store Analytics"
+  group_label: "JMB Store Analytics"
   join: users {
     type: left_outer
     sql_on: ${order_items.user_id} = ${users.id} ;;
@@ -42,7 +42,7 @@ explore: order_items {
 }
 
 explore: events {
-  group_label: "Store Analytics"
+  group_label: "JMB Store Analytics"
   join: users {
     type: left_outer
     sql_on: ${events.user_id} = ${users.id} ;;
@@ -51,7 +51,7 @@ explore: events {
 }
 
 explore: inventory_items {
-  group_label: "Store Analytics"
+  group_label: "JMB Store Analytics"
   join: products {
     type: left_outer
     sql_on: ${inventory_items.product_id} = ${products.id} ;;
@@ -66,9 +66,9 @@ explore: inventory_items {
 }
 
 explore: distribution_centers {
-  group_label: "Store Analytics"
+  group_label: "JMB Store Analytics"
 }
 explore: users {
   label: "Customers"
-  group_label: "Store Analytics"
+  group_label: "JMB Store Analytics"
 }
