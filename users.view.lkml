@@ -99,6 +99,12 @@ view: users {
     sql: ${TABLE}.zip ;;
   }
 
+  measure: avg_age {
+    type: average
+    value_format_name: decimal_1
+    sql: ${age} ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [id, first_name, last_name, events.count, order_items.count]

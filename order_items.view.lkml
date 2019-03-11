@@ -90,6 +90,18 @@ view: order_items {
     sql: ${TABLE}.user_id ;;
   }
 
+  measure: avg_sale_price {
+    type: average
+    value_format_name: usd
+    sql: ${sale_price} ;;
+  }
+
+  measure: sum_sale_price {
+    type: sum
+    value_format_name: usd
+    sql: ${sale_price} ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [detail*]

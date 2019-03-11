@@ -11,7 +11,7 @@ map_layer: store_map_layer {
   format: topojson
   file: "store-map-sample.topojson"
   property_key: "display-name"
-  label: "name"
+  property_label_key: "name"
 }
 
 explore: order_items {
@@ -65,13 +65,10 @@ explore: inventory_items {
   }
 }
 
-explore: company_list {
-  group_label: "Store Analytics"
-}
-
 explore: distribution_centers {
   group_label: "Store Analytics"
 }
 explore: users {
+  label: "Customers"
   group_label: "Store Analytics"
 }
