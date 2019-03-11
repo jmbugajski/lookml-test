@@ -9,8 +9,9 @@ persist_with: jmb_test_default_datagroup
 
 map_layer: store_map_layer {
   format: topojson
-  file: "store-map-sample-mod.topojson"
+  file: "store-map-sample.topojson"
   property_key: "display-name"
+  label: "name"
 }
 
 explore: order_items {
