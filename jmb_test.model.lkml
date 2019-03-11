@@ -8,6 +8,7 @@ datagroup: jmb_test_default_datagroup {
 persist_with: jmb_test_default_datagroup
 
 map_layer: store_map_layer {
+  format: topojson
   file: "store-map-sample-mod.topojson"
   property_key: "display-name"
 }

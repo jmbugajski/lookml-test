@@ -13,8 +13,9 @@ view: products {
   }
 
   dimension: store_area {
-    sql: ${TABLE}.category ;;
+    type: string
     map_layer_name: store_map_layer
+    sql: ${TABLE}.category ;;
   }
 
   dimension: category {
