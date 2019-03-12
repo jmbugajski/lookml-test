@@ -65,6 +65,12 @@ view: order_items {
     sql: ${TABLE}.sale_price ;;
   }
 
+  dimension: gross_margin {
+    type: number
+    value_format_name: usd
+    sql: ${sale_price} - ${inventory_items.cost} ;;
+  }
+
   dimension_group: shipped {
     type: time
     timeframes: [
@@ -90,32 +96,92 @@ view: order_items {
     sql: ${TABLE}.user_id ;;
   }
 
+  measure: total_gross_margin {
+    type: sum
+    value_format_name: usd
+    sql: ${gross_margin} ;;
+    drill_fields: [detail*]
+  }
+
   measure: avg_sale_price {
     type: average
     value_format_name: usd
     sql: ${sale_price} ;;
-  }
-
-  measure: sum_sale_price {
-    type: sum
-    value_format_name: usd
-    sql: ${sale_price} ;;
-  }
-
-  measure: count {
-    type: count
     drill_fields: [detail*]
   }
 
-  # ----- Sets of fields for drilling ------
+  measure: total_sale_price {
+    type: sum
+    value_format_name: usd
+    sql: ${sale_price} ;;
+    drill_fields: [detail*]
+  }
+
+  measure: count {
+    type: count_distinct
+    sql: ${id} ;;
+    drill_fields: [detail*]
+  }
+
+  measure: order_count {
+    type: count_distinct
+    drill_fields: [detail*]
+    sql: ${order_id} ;;
+  }
+
+  measure: avg_gross_margin {
+    type: average
+    value_format_name: usd
+    sql: ${gross_margin} ;;
+    drill_fields: [detail*]
+  }
+
+  measure: total_gross_margin_percentage {
+    type: number
+    value_format_name: percent_2
+    sql: 1.0 * ${total_gross_margin}/ NULLIF(${total_sale_price},0) ;;
+  }
+
+## Returns Information ##
+
+  dimension: is_returned {
+    type: yesno
+    sql: ${returned_raw} IS NOT NULL ;;
+  }
+
+  measure: returned_count {
+    type: count_distinct
+    sql: ${id} ;;
+    filters: {
+      field: is_returned
+      value: "yes"
+    }
+    drill_fields: [detail*]
+  }
+
+  measure: returned_total_sale_price {
+    type: sum
+    value_format_name: usd
+    sql: ${sale_price} ;;
+    filters: {
+      field: is_returned
+      value: "yes"
+    }
+  }
+
+  measure: return_rate {
+    type: number
+    value_format_name: percent_2
+    sql: 1.0 * ${returned_count} / nullif(${count},0) ;;
+  }
+
+
+########## Sets ##########
+
   set: detail {
-    fields: [
-      id,
-      users.id,
-      users.first_name,
-      users.last_name,
-      inventory_items.id,
-      inventory_items.product_name
-    ]
+    fields: [id, order_id, status, created_date, sale_price, products.brand, products.item_name, users.portrait, users.name, users.email]
+  }
+  set: return_detail {
+    fields: [id, order_id, status, created_date, returned_date, sale_price, products.brand, products.item_name, users.portrait, users.name, users.email]
   }
 }
