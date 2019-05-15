@@ -1,6 +1,7 @@
 connection: "thelook_events"
 
 include: "*.view"
+include: "*.dashboard"
 
 datagroup: jmb_test_default_datagroup {
   max_cache_age: "4 hours"

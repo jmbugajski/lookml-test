@@ -2,16 +2,6 @@
   title: Business Pulse Dashboard
   layout: newspaper
   description: ''
-  embed_style:
-    background_color: white
-    show_title: true
-    title_color: "#1b9bcc"
-    show_filters_bar: false
-    tile_text_color: "#7ba3b3"
-    tile_separator_color: "#bdb7b7"
-    tile_border_radius: 2
-    show_tile_shadow: false
-    text_tile_text_color: "#ecf1e8"
   elements:
   - name: Number of First Purchasers (copy)
     title: Number of First Purchasers (copy)
@@ -161,8 +151,8 @@
     col: 1
     width: 22
     height: 9
-  - title: Website Visit Volume vs. Conversion Rate
-    name: Website Visit Volume vs. Conversion Rate
+  - title: Website Visit Volume vs Conversion Rate
+    name: Website Visit Volume vs Conversion Rate
     model: thelook
     explore: events
     type: looker_column
@@ -811,16 +801,14 @@
     col: 0
     width: 24
     height: 3
-  - name: "<img src='https://cdn.worldvectorlogo.com/logos/looker.svg' width = '100%'\
-      \ >"
+  - name: 'test text1'
     type: text
-    title_text: "<img src='https://cdn.worldvectorlogo.com/logos/looker.svg' width\
-      \ = '100%' >"
+    title_text: ''
     row: 52
     col: 10
     width: 3
     height: 2
-  - name: ''
+  - name: 'test text2'
     type: text
     body_text: "<hr />"
     row: 54
@@ -843,26 +831,6 @@
     default_value: 90 days
     allow_multiple_values: true
     required: false
-  - name: State
-    title: State
-    type: field_filter
-    default_value: ''
-    allow_multiple_values: true
-    required: false
-    model: thelook
-    explore: order_items
-    listens_to_filters: [Country]
-    field: users.state
-  - name: City
-    title: City
-    type: field_filter
-    default_value: ''
-    allow_multiple_values: false
-    required: false
-    model: thelook
-    explore: order_items
-    listens_to_filters: [State, Country]
-    field: users.city
   - name: User ID
     title: User ID
     type: number_filter
