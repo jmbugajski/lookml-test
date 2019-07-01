@@ -33,6 +33,11 @@ view: order_items {
     sql: MAX(${created_date}) ;;
   }
 
+  measure: date_range_display {
+    type: string
+    sql: ${min_created_date} + 'to' + ${max_created_date} ;;
+  }
+
   dimension_group: delivered {
     type: time
     timeframes: [
