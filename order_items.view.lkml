@@ -35,7 +35,7 @@ view: order_items {
 
   measure: date_range_display {
     type: string
-    sql: ${min_created_date} + 'to' + ${max_created_date} ;;
+    sql: 'Current Data Range: ' + ${min_created_date} + 'to' + ${max_created_date} ;;
   }
 
   dimension_group: delivered {
