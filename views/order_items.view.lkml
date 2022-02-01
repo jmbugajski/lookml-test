@@ -33,9 +33,15 @@ view: order_items {
     sql: MAX(${created_date}) ;;
   }
 
-  measure: date_range_display {
+  filter: data_date {
+    type: date
+    convert_tz: no
+    sql: ${created_date} ;;
+  }
+
+  measure: data_date_range {
     type: string
-    sql: 'Current Data Range: ' + ${min_created_date} + 'to' + ${max_created_date} ;;
+    sql: ${min_created_date} || CAST(" " as string) || ${max_created_date} ;;
   }
 
   dimension_group: delivered {
